@@ -12,6 +12,8 @@ essa função também faz verificações para ver se os valores inserido são va
 A função sortear amigo será responsável por pegar valores capturados pela função adicionar amigo, e através de um gerador de número aleatório é escolhido um dos valores capturados para se
 exibir na tela do html.
 
+![Botão de sortear amigo no html](https://github.com/user-attachments/assets/4c6ab2d5-15e2-4a84-b04b-20ef81db4e39)
+
 ![função limpar campo](https://github.com/user-attachments/assets/07b3f7ee-2463-4919-968f-bd907c4845d3)
 
 Está é uma função de apoio á função adicionar amigo, ela será execultada apos um amigo ser adiciona, onde ela fará a remoção do nome inserido do campo de adicionar amigo do html.
