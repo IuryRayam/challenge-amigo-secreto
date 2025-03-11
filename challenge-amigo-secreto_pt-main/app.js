@@ -4,9 +4,10 @@ function adicionarAmigo() {
     let input = document.querySelector("input").value;
 
     if (input !== null && input !== "") {
-        amigos = input.split(",").map(amigo => amigo.trim());
+        amigos.push(input);
 
         let campolistaamigo = document.querySelector("#listaAmigos");
+        campolistaamigo.innerHTML = "";
 
         amigos.forEach(amigo => {
             let li = document.createElement("li");
@@ -19,6 +20,21 @@ function adicionarAmigo() {
     }
 
     limparCampo();
+}
+
+function sortearAmigo() {
+    let campolistaamigo = document.querySelector("#listaAmigos");
+    campolistaamigo.innerHTML = "";
+
+    let numeroaleatorio = parseInt(Math.random() * amigos.length);
+    console.log(numeroaleatorio);
+    console.log(amigos[numeroaleatorio]);
+
+    let resultado = document.querySelector("#resultado");
+    let li = document.createElement("li");
+    li.textContent = `Parabéns ${amigos[numeroaleatorio]} você foi a/o escolhida(o)`;
+
+    resultado.appendChild(li);
 }
 
 function limparCampo() {
