@@ -26,6 +26,11 @@ function sortearAmigo() {
     let campolistaamigo = document.querySelector("#listaAmigos");
     campolistaamigo.innerHTML = "";
 
+    if (amigos.length == 0) {
+        alert('Adicione amigos antes de sortear!');
+        return;
+    }
+
     let numeroaleatorio = parseInt(Math.random() * amigos.length);
     console.log(numeroaleatorio);
     console.log(amigos[numeroaleatorio]);
